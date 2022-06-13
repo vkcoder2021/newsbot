@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(117, 117, 117, 0.2);
+  display: grid;
+  place-items: center;
+}
+.Dashboard {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 10px;
+  padding: 10px 5px;
+  background-color: #fff;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.dropdown {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+  /* top: -100%; */
+}
+.dropdown-container {
+  /* border: 1px solid #333; */
+  width: 96%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+.sub_heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 6px 0;
+}
+
+.btns {
+  display: flex;
+  gap: 0 10px;
+}
+
+.btn {
+  width: max-content;
+  padding: 2px 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(149, 149, 149);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  display: none;
+}
+label {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+input[type='submit'] {
+  margin: 20px 0;
+  height: 30px;
+  width: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  background-color: rgb(46, 126, 219);
+  /* border: 1px solid rgb(0, 162, 255); */
+  /* color: rgb(0, 162, 255); */
+}
+
+.news_headlines {
+  position: relative;
+  height: 100%;
+  padding: 5px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.news_headlines::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background: rgb(225, 225, 225);
+}
+.news_headlines::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(179, 179, 179);
+}
+
+.option-icon {
+  /* height: 40px; */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.option-icon > span {
+  height: 30px;
+  width: 30px;
+  background-color: #333;
+}
+
+.article {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.author {
+  font-size: 14px;
+}
+.publishedAt {
+  font-size: 14px;
+}
+.desc {
+  padding: 4px 0;
+}
